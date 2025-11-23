@@ -8,7 +8,7 @@ The program will then provide a customized reminder for that task, demonstrating
 #solution
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
-time_bound = input("Is it time bound? (yes/no): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 #using match case to make decision
 match priority:
