@@ -6,17 +6,14 @@ This task aims to demonstrate the use of if, elif, and else statements to make d
 """
 
 weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
-recommendation_text = ""
+
 
 #using if, elif and else to provide recommendations
 if weather == "sunny":
-    recommendation_text = "Wear a t-shirt and sunglasses."
+    print("Wear a t-shirt and sunglasses.")
 elif weather == "rainy":
-    recommendation_text = "Don't forget your umbrella and a raincoat."
+    print("Don't forget your umbrella and a raincoat.")
 elif weather == "cold":
-    recommendation_text = "Make sure to wear a warm coat and a scarf."
+    print("Make sure to wear a warm coat and a scarf.")
 else:
-    recommendation_text = "Sorry, I don't have recommendations for this weather."
-
-#display recommendation
-print(recommendation_text)
+    print("Sorry, I don't have recommendations for this weather.")
