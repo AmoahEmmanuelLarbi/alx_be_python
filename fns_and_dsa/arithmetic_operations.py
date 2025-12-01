@@ -5,7 +5,7 @@ This function, perform_operation, will be imported and used in a separate main.p
 """
 
 #define a function that performs basic arithmetic operations
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     """
     Performs basic arithmetic operations on two numbers.
 
