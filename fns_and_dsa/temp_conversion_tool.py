@@ -27,11 +27,11 @@ print(convert_to_celsius(100))
 temperature = float(input("Enter the temperature to convert: "))
 unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 
-if unit == "f":
+if isinstance(temperature, float) and unit == "f":
     result = convert_to_celsius(temperature)
     print(f"{temperature} F is {result} C")
-elif unit == "c":
+elif isinstance(temperature, float) and unit == "c":
     result = convert_to_fahrenheit(temperature)
     print(f"{temperature} C is {result} F")
 else:
-    print("Temperature unit is invalid")
+    print("Invalid temperature. Please enter a numeric value.")
