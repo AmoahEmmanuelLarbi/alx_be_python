@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta
 """
 Task Instructions:
 Your task is to create a Python script named explore_datetime.py. 
@@ -12,7 +12,7 @@ save the current date inside a current_date variable
 
 # create function
 def display_current_datetime():
-    current_date = datetime.datetime.now()
+    current_date = datetime.now()
     return current_date
 
 #
@@ -22,8 +22,8 @@ print(f"Current date and time: {display_current_datetime().strftime("%Y-%m-%d %H
 
 #Task 2
 def calculate_future_date(days_to_added):
-    current_date = datetime.datetime.now()
-    future_date = current_date + datetime.timedelta(days=days_to_added)
+    current_date = datetime.now()
+    future_date = current_date + timedelta(days=days_to_added)
     return future_date.strftime("%Y-%m-%d")
     
 
