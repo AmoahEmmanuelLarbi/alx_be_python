@@ -22,16 +22,16 @@ def perform_operation(num1, num2, operation):
     """
     match operation:
         case "add":
-            return float(num1) + float(num2)
+            return num1 + num2
         case "subtract":
-            return float(num1) - float(num2)
+            return num1 - num2
         case "multiply":
-            return float(num1) * float(num2)
+            return num1 * num2
         case "divide":
             if num2 == 0:
                 print("Can't divide by zero")
             else:
-                return float(num1) / float(num2)
+                return num1 / num2
         case _:
             print("Invalid operation")
 
