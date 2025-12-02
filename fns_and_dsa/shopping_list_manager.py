@@ -20,14 +20,14 @@ def main():
 
         if choice == "1":
             # Prompt for and add an item
-            item_name = input("Enter the name of the item you want to add: ")
+            item_name = input("Enter the item to add: ")
             # add items to list
             shopping_list.append(item_name)
             print(f"Item '{item_name}' added to shopping list\n")
             
         elif choice == '2':
             # Prompt for and remove an item
-            item_name = input("Enter the name of the item you want to remove: ")
+            item_name = input("Enter the item to remove: ")
             #remove item from list
             shopping_list.remove(item_name)
             print(f"Item '{item_name}' removed from shopping list\n")
