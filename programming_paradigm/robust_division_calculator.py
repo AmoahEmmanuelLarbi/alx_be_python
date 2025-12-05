@@ -11,17 +11,18 @@ Create two Python scripts: robust_division_calculator.py, which contains the div
 def safe_divide(numerator, denominator):
     #handle zero divison error
     try:
+        # Convert both values to float (may raise ValueError)
+        numerator = float(numerator)
+        denominator = float(denominator)
         if denominator == 0:
             raise ZeroDivisionError()
         # if float(numerator):
         #     raise ValueError("Error: Please enter numeric values only.")
-        return float(numerator) / float(denominator)
+        result = numerator / denominator
+        print(f"The result of the divison is {result}")
+        #return float(numerator) / float(denominator)
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
-    except ValueError as e:
+    except ValueError:
         print("Error: Please enter numeric values only")
     
-
-
-result = safe_divide("ten", 4)
-print(result)
