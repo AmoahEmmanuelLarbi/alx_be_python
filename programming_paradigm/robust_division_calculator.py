@@ -19,7 +19,7 @@ def safe_divide(numerator, denominator):
         # if float(numerator):
         #     raise ValueError("Error: Please enter numeric values only.")
         result = numerator / denominator
-        print(f"The result of the divison is {result}")
+        return f"The result of the divison is {result}"
         #return result
         #return float(numerator) / float(denominator)
     except ZeroDivisionError:
