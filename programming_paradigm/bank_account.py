@@ -26,7 +26,7 @@ class BankAccount:
         if amount > self.amount:
             #print(f"The amount $ {amount} you want to withdraw is greater than current bank balance $ {self.amount}")
             pass
-        return amount
+        return current_amount
     #display_balance() method
     def display_balance(self):
         print(f"Current Balance: ${float(self.amount):.2f}")
