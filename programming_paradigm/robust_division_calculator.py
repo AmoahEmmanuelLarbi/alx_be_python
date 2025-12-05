@@ -20,9 +20,13 @@ def safe_divide(numerator, denominator):
         #     raise ValueError("Error: Please enter numeric values only.")
         result = numerator / denominator
         print(f"The result of the divison is {result}")
+        #return result
         #return float(numerator) / float(denominator)
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
     except ValueError:
         print("Error: Please enter numeric values only")
-    
+        
+
+#testing function
+#safe_divide("ten", 0)
