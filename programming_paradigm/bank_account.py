@@ -8,7 +8,7 @@ Task Description:
 You will create two Python scripts: bank_account.py, which contains the BankAccount class, and main-0.py, which interfaces with the class through command line arguments to perform banking operations.
 """
 #class declaration
-class BankAccount():
+class BankAccount:
     #constructor
     def __init__(self, amount = 0):
         self.amount = amount
