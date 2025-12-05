@@ -15,20 +15,21 @@ class BankAccount:
 
     # Implement deposit(amount), withdraw(amount), and display_balance() methods.
     #deposit(amount) method
-    def deposit(self, amount):
+    def deposit(self, amount = 0):
         self.amount += amount
         return amount
 
     #withdraw(amount) method
     def withdraw(self, amount):
-        if self.amount >= amount:
-            self.amount -= amount
-        if self.amount < amount:
-            print(f"The amount $ {amount} you want to withdraw is greater than current bank balance $ {self.amount}")
+        if amount < self.amount:
+            current_amount = self.amount - amount
+        if amount > self.amount:
+            #print(f"The amount $ {amount} you want to withdraw is greater than current bank balance $ {self.amount}")
             pass
+        return amount
     #display_balance() method
     def display_balance(self):
-        print(f"Current Balance: $[{self.amount}]")
+        print(f"Current Balance: ${float(self.amount):.2f}")
 
 #object implementation
 # test1 = BankAccount()
