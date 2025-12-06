@@ -7,7 +7,7 @@ Create a test_simple_calculator.py script to define and run unit tests for each 
 Your tests should cover various scenarios to ensure the class functions correctly.
 """
 import unittest
-from . simple_calculator import SimpleCalculator # custom module
+from .simple_calculator import SimpleCalculator # custom module
 
 calc = SimpleCalculator()
 #test class
