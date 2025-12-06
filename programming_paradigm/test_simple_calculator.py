@@ -7,30 +7,30 @@ Create a test_simple_calculator.py script to define and run unit tests for each 
 Your tests should cover various scenarios to ensure the class functions correctly.
 """
 import unittest
-from simple_calculator import SimpleCalculator # custom module
+from . simple_calculator import SimpleCalculator # custom module
 
-calculator = SimpleCalculator()
+calc = SimpleCalculator()
 #test class
 class TestSimpleCalculator(unittest.TestCase):
     def test_addition(self):
-        result = calculator.add(2, 5)
+        result = calc.add(2, 5)
         self.assertEqual(result, 7)
-        self.assertEqual(calculator.add(3, -1), 2)
+        self.assertEqual(calc.add(3, -1), 2)
 
     def test_subtraction(self):
-        result = calculator.subtract(5, 2)
+        result = calc.subtract(5, 2)
         self.assertEqual(result, 3)
 
     def test_multiply(self):
-        result = calculator.multiply(2, 5)
+        result = calc.multiply(2, 5)
         self.assertEqual(result, 10)
-        self.assertEqual(calculator.multiply(4, -7), -28)
+        self.assertEqual(calc.multiply(4, -7), -28)
 
     def test_divide(self):
-        result = calculator.divide(10, 2)
+        result = calc.divide(10, 2)
         self.assertEqual(result, 5)
         with self.assertRaises(ZeroDivisionError):
-            calculator.divide(4, 0)
+            calc.divide(4, 0)
              
 if __name__ == "__main__":
     unittest.main()
