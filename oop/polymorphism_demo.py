@@ -40,7 +40,7 @@ class Circle(Shape):
         return f"Circle of radius {self.radius}"
     
     def area(self):
-        return math.pi * pow(self.radius, 2)
+        return math.pi * (self.radius ** 2)
 
 
 
