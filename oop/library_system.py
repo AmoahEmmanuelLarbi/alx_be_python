@@ -15,8 +15,8 @@ class Book:
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
     
-    def __repr__(self):
-        return f"Book ('{self.title}', '{self.author}')"
+    # def __repr__(self):
+    #     return f"Book ('{self.title}', '{self.author}')"
     
 
 #create a Ebook class that inherit the Book class
@@ -29,9 +29,9 @@ class EBook(Book):
         # return f"{super().__str__()} and it's file szie of {self.file_size} KB"
         return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
     
-    def __repr__(self):
-        # return f"{super().__repr__()}, ('{self.file_size} KB')"
-        return f"EBook: ('{self.title} by {self.author}, File Size: {self.file_size}KB')"
+    # def __repr__(self):
+    #     # return f"{super().__repr__()}, ('{self.file_size} KB')"
+    #     return f"EBook: ('{self.title} by {self.author}, File Size: {self.file_size}KB')"
     
 
 #create a PrintBook class that inherit the Book class
@@ -45,9 +45,9 @@ class PrintBook(Book):
          return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
     
-    def __repr__(self):
-        # return f"{super().__repr__()}, ('{self.page_count}')"
-         return f"PrintBook: ('{self.title} by {self.author}, Page Counf: {self.page_count}')"
+    # def __repr__(self):
+    #     # return f"{super().__repr__()}, ('{self.page_count}')"
+    #      return f"PrintBook: ('{self.title} by {self.author}, Page Count: {self.page_count}')"
 
 #create a class using composition
 class Library:
