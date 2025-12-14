@@ -63,4 +63,6 @@ class Library:
         self.books.append(book)
 
     def list_books(self):
-        return self.books
+        for book in self.books:
+            print(book)
+        # return self.books
