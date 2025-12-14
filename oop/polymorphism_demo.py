@@ -43,9 +43,9 @@ class Circle(Shape):
         return math.pi * (self.radius ** 2)
 
 
-
-r = Rectangle(4, 6)
-print(r.area())
+# testing class
+# r = Rectangle(4, 6)
+# print(r.area())
 
 def main():
     shapes = [
