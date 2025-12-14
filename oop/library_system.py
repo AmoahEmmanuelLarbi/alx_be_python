@@ -47,7 +47,7 @@ class PrintBook(Book):
     
     def __repr__(self):
         # return f"{super().__repr__()}, ('{self.page_count}')"
-         return f"EBook: ('{self.title} by {self.author}, Page Counf: {self.page_count}')"
+         return f"PrintBook: ('{self.title} by {self.author}, Page Counf: {self.page_count}')"
 
 #create a class using composition
 class Library:
